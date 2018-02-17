@@ -1,5 +1,6 @@
 package com.example.fabio.esempio5b;
 
+import android.content.Intent;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.fabio.myapplication.Main2Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
         if(savedInstanceState!=null){
             x=savedInstanceState.getInt("numero");
         }
+
+        Button vaia=findViewById(R.id.buttonVaia);
+        vaia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this, Main2Activity.class);
+                i.putExtra("x",x);
+                startActivity(i);
+            }
+        });
         // Recupero il puntatore all'elemento grafico
         button = findViewById(R.id.grecoButton);
 
