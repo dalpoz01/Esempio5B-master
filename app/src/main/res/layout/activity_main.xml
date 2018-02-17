@@ -20,9 +20,9 @@
         android:id="@+id/grecoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="84dp"
-        android:text="Button"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="412dp"
+        android:text="Aumenta X"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,8 +30,10 @@
         android:id="@+id/buttonVaia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="280dp"
+        android:layout_marginTop="412dp"
         android:text="Vai a..."
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
